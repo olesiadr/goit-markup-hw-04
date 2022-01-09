@@ -64,7 +64,6 @@ img {
 }
 .link {
   text-decoration: none;
-  color: #afb1b8;
 }
 
 .visually-hidden {
@@ -85,7 +84,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .logo {
   color: #000000;
@@ -114,7 +113,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .nav-menu {
   display: flex;
@@ -166,36 +165,32 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.contact:hover {
+  color: var(--accent-color);
 }
 
 .contact-icon {
-  /* align-items: flex-end;
-  justify-content: center; */
-  margin-right: 2px;
+  margin-right: 10px;
 }
-
-/* .contact-icon:hover {
-  color: var(--accent-color);
-} */
 
 .contacts-item {
   color: #757575;
-}
-.contacts-item:hover,
-.contacts-item:focus {
-  color: var(--accent-color);
 }
 
 .envelope {
   width: 16px;
   height: 12px;
-  color: currentColor;
+  fill: currentColor;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
-  color: currentColor;
+  fill: currentColor;
 }
 
 .mail {
@@ -399,7 +394,7 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: var(--main-margin);
+  margin-bottom: 16px;
 }
 
 .socialmedia-list {
@@ -426,10 +421,9 @@ img {
 }
 
 .socialmedialinks-icon {
-  /* fill: #afb1b8; */
   width: 20px;
   height: 20px;
-  color: currentColor;
+  fill: currentColor;
 }
 
 .socialmedia-link:hover,
@@ -478,6 +472,7 @@ img {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
   margin-top: 50px;
+  color: #afb1b8;
 }
 .client-link:hover,
 .client-link:focus {
@@ -498,7 +493,10 @@ img {
   display: flex;
   align-items: flex-start;
 }
-
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
+}
 .logo-address {
   display: flex;
   flex-direction: column;
@@ -525,6 +523,20 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.socialmedia-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 .socialmedia-list-footer {
   display: flex;
   justify-content: center;
@@ -548,12 +560,13 @@ img {
   align-items: center;
   border-radius: 50%;
   color: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .socialmedialinks-icon-footer {
   width: 20px;
   height: 20px;
-  color: currentColor;
+  fill: currentColor;
 }
 
 .socialmedia-link-footer:hover,
